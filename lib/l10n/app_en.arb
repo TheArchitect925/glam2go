@@ -1,0 +1,119 @@
+{
+  "@@locale": "en",
+  "appName": "Glam2GO",
+  "actionContinue": "Continue",
+  "actionBrowseArtists": "Browse artists",
+  "actionViewSearchResults": "View search results",
+  "actionViewArtistProfile": "Open artist profile",
+  "actionStartBooking": "Start booking",
+  "actionChooseDateTime": "Choose date and time",
+  "actionChooseLocation": "Choose location",
+  "actionReviewBooking": "Review booking",
+  "actionConfirmBooking": "Confirm booking",
+  "actionViewBookingDetail": "Open booking detail",
+  "actionOpenSettings": "Open settings",
+  "navHome": "Home",
+  "navSearch": "Search",
+  "navBookings": "Bookings",
+  "navFavorites": "Favorites",
+  "navProfile": "Profile",
+  "splashLoading": "Preparing the Glam2GO booking baseline.",
+  "onboardingTitle": "Beauty booking, organized cleanly.",
+  "onboardingSubtitle": "The baseline app shell is ready for customer discovery and booking flows.",
+  "onboardingStatus": "Onboarding is intentionally lean in this pass. Authentication and role setup will be implemented in feature-focused passes.",
+  "authSignInTitle": "Sign in",
+  "authSignInDescription": "Authentication entry scaffold for returning customers and artists.",
+  "authSignUpTitle": "Create account",
+  "authSignUpDescription": "Registration scaffold for the Glam2GO marketplace.",
+  "homeTitle": "Home",
+  "homeHeadline": "Discovery starts here.",
+  "homeDescription": "This home scaffold will grow into the premium discovery surface for nearby artists, trust signals, and occasion-led entry points.",
+  "homeStatus": "Home is scaffolded with router, theme, and localization wiring only.",
+  "searchTitle": "Search",
+  "searchHeadline": "Search and filter artists.",
+  "searchDescription": "Search is wired into the app shell and ready for real filtering state in a future pass.",
+  "searchStatus": "Search is scaffolded but intentionally not populated with fake data.",
+  "searchResultsTitle": "Search results",
+  "searchResultsHeadline": "Review candidate artists.",
+  "searchResultsDescription": "Results routing is in place so the discovery flow can deepen without route drift.",
+  "searchResultsStatus": "No seeded artist catalog is shown in this pass.",
+  "artistProfileTitle": "Artist profile",
+  "artistProfileHeadline": "Evaluate artist fit.",
+  "artistProfileStatus": "Artist profile is scaffolded for portfolio, package, pricing, and trust sections.",
+  "packageDetailsTitle": "Package details",
+  "packageDetailsHeadline": "Inspect package details cleanly.",
+  "packageDetailsStatus": "Package detail scaffolding exists without fake package content.",
+  "bookingStartTitle": "Booking",
+  "bookingStartHeadline": "Start a structured booking.",
+  "bookingStartDescription": "The booking entry flow is wired and ready for real booking state.",
+  "bookingStartStatus": "No backend booking state or payment integration is attached in this pass.",
+  "bookingDateTimeTitle": "Date and time",
+  "bookingDateTimeHeadline": "Choose the appointment slot.",
+  "bookingDateTimeDescription": "Date and time selection will connect to artist availability in a dedicated booking pass.",
+  "bookingDateTimeStatus": "Availability logic is intentionally not implemented yet.",
+  "bookingLocationTitle": "Location",
+  "bookingLocationHeadline": "Set the service address.",
+  "bookingLocationDescription": "Location and travel-fee rules will build on the booking foundation without hiding pricing impact.",
+  "bookingLocationStatus": "Address collection and distance pricing remain future implementation work.",
+  "bookingCheckoutTitle": "Checkout",
+  "bookingCheckoutHeadline": "Review before confirmation.",
+  "bookingCheckoutDescription": "Checkout is present as a route and UI scaffold only.",
+  "bookingCheckoutStatus": "Payment remains a placeholder architecture concern for a later pass.",
+  "bookingConfirmationTitle": "Confirmation",
+  "bookingConfirmationHeadline": "Booking confirmation will live here.",
+  "bookingConfirmationStatus": "Confirmation is scaffolded as a stable destination route.",
+  "bookingsTitle": "Bookings",
+  "bookingsHeadline": "Track upcoming and past bookings.",
+  "bookingsDescription": "Bookings are part of the authenticated customer shell from the start.",
+  "bookingsStatus": "Booking history data and states will be added in a dedicated pass.",
+  "bookingDetailTitle": "Booking detail",
+  "bookingDetailHeadline": "Review one booking.",
+  "bookingDetailStatus": "This route exists now to keep detail navigation stable.",
+  "favoritesTitle": "Favorites",
+  "favoritesHeadline": "Save artists worth revisiting.",
+  "favoritesDescription": "Favorites are scaffolded as a first-class customer destination.",
+  "favoritesStatus": "No persistence layer is connected yet.",
+  "profileTitle": "Profile",
+  "profileHeadline": "Manage your account.",
+  "profileDescription": "Profile and settings stay narrow in V1 and expand only when justified.",
+  "profileStatus": "Profile is scaffolded for account-level work, not yet feature-complete.",
+  "profileEditTitle": "Edit profile",
+  "profileEditHeadline": "Update account details.",
+  "profileEditDescription": "Profile editing is reserved as a stable route for future implementation.",
+  "settingsTitle": "Settings",
+  "settingsHeadline": "Control app preferences.",
+  "settingsDescription": "Settings will grow carefully as localization and account options mature.",
+  "settingsStatus": "Settings are intentionally minimal in this pass.",
+  "scaffoldIncompleteMessage": "This screen is a baseline scaffold only. Business logic and production content will be added in later feature passes.",
+  "artistProfileDescription": "Artist profile route loaded for artist id: {artistId}.",
+  "@artistProfileDescription": {
+    "placeholders": {
+      "artistId": {}
+    }
+  },
+  "packageDetailsDescription": "Package detail route loaded for package id: {packageId}.",
+  "@packageDetailsDescription": {
+    "placeholders": {
+      "packageId": {}
+    }
+  },
+  "bookingSelectedPackageDescription": "Booking route loaded for artist {artistId} and package {packageId}.",
+  "@bookingSelectedPackageDescription": {
+    "placeholders": {
+      "artistId": {},
+      "packageId": {}
+    }
+  },
+  "bookingConfirmationDescription": "Confirmation route loaded for booking id: {bookingId}.",
+  "@bookingConfirmationDescription": {
+    "placeholders": {
+      "bookingId": {}
+    }
+  },
+  "bookingDetailDescription": "Booking detail route loaded for booking id: {bookingId}.",
+  "@bookingDetailDescription": {
+    "placeholders": {
+      "bookingId": {}
+    }
+  }
+}
