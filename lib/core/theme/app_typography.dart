@@ -11,29 +11,29 @@ class AppTypography {
 
     return const TextTheme(
       displayLarge: TextStyle(
-        fontSize: 34,
+        fontSize: 36,
+        fontWeight: FontWeight.w700,
+        height: 1.1,
+        color: baseColor,
+        letterSpacing: -0.9,
+      ),
+      displayMedium: TextStyle(
+        fontSize: 30,
         fontWeight: FontWeight.w700,
         height: 1.15,
         color: baseColor,
-        letterSpacing: -0.8,
-      ),
-      displayMedium: TextStyle(
-        fontSize: 28,
-        fontWeight: FontWeight.w700,
-        height: 1.2,
-        color: baseColor,
-        letterSpacing: -0.5,
+        letterSpacing: -0.7,
       ),
       headlineMedium: TextStyle(
         fontSize: 22,
         fontWeight: FontWeight.w700,
-        height: 1.25,
+        height: 1.2,
         color: baseColor,
       ),
       titleLarge: TextStyle(
-        fontSize: 18,
+        fontSize: 19,
         fontWeight: FontWeight.w600,
-        height: 1.3,
+        height: 1.25,
         color: baseColor,
       ),
       titleMedium: TextStyle(
@@ -45,11 +45,17 @@ class AppTypography {
       bodyLarge: TextStyle(
         fontSize: 16,
         fontWeight: FontWeight.w400,
-        height: 1.45,
+        height: 1.5,
         color: baseColor,
       ),
       bodyMedium: TextStyle(
         fontSize: 14,
+        fontWeight: FontWeight.w400,
+        height: 1.5,
+        color: secondaryColor,
+      ),
+      bodySmall: TextStyle(
+        fontSize: 12,
         fontWeight: FontWeight.w400,
         height: 1.45,
         color: secondaryColor,
@@ -64,6 +70,12 @@ class AppTypography {
         fontSize: 12,
         fontWeight: FontWeight.w600,
         height: 1.2,
+        color: secondaryColor,
+      ),
+      labelSmall: TextStyle(
+        fontSize: 11,
+        fontWeight: FontWeight.w600,
+        height: 1.15,
         color: secondaryColor,
       ),
     );

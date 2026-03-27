@@ -45,6 +45,83 @@ class AppShell extends StatelessWidget {
   Widget build(BuildContext context) {
     final l10n = context.l10n;
 
+    return AppNavigationShell(
+      navigationShell: navigationShell,
+      destinations: [
+        AppShellDestination(
+          icon: const Icon(Icons.home_outlined),
+          selectedIcon: const Icon(Icons.home_rounded),
+          label: l10n.navHome,
+        ),
+        AppShellDestination(
+          icon: const Icon(Icons.search_outlined),
+          selectedIcon: const Icon(Icons.search_rounded),
+          label: l10n.navSearch,
+        ),
+        AppShellDestination(
+          icon: const Icon(Icons.calendar_month_outlined),
+          selectedIcon: const Icon(Icons.calendar_month_rounded),
+          label: l10n.navBookings,
+        ),
+        AppShellDestination(
+          icon: const Icon(Icons.favorite_border_rounded),
+          selectedIcon: const Icon(Icons.favorite_rounded),
+          label: l10n.navFavorites,
+        ),
+        AppShellDestination(
+          icon: const Icon(Icons.person_outline_rounded),
+          selectedIcon: const Icon(Icons.person_rounded),
+          label: l10n.navProfile,
+        ),
+      ],
+    );
+  }
+}
+
+class ArtistShell extends StatelessWidget {
+  const ArtistShell({super.key, required this.navigationShell});
+
+  final StatefulNavigationShell navigationShell;
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = context.l10n;
+
+    return AppNavigationShell(
+      navigationShell: navigationShell,
+      destinations: [
+        AppShellDestination(
+          icon: const Icon(Icons.dashboard_outlined),
+          selectedIcon: const Icon(Icons.dashboard_rounded),
+          label: l10n.artistNavDashboard,
+        ),
+        AppShellDestination(
+          icon: const Icon(Icons.calendar_month_outlined),
+          selectedIcon: const Icon(Icons.calendar_month_rounded),
+          label: l10n.artistNavBookings,
+        ),
+        AppShellDestination(
+          icon: const Icon(Icons.settings_outlined),
+          selectedIcon: const Icon(Icons.settings_rounded),
+          label: l10n.artistNavSettings,
+        ),
+      ],
+    );
+  }
+}
+
+class AppNavigationShell extends StatelessWidget {
+  const AppNavigationShell({
+    super.key,
+    required this.navigationShell,
+    required this.destinations,
+  });
+
+  final StatefulNavigationShell navigationShell;
+  final List<AppShellDestination> destinations;
+
+  @override
+  Widget build(BuildContext context) {
     return Scaffold(
       body: navigationShell,
       bottomNavigationBar: NavigationBar(
@@ -56,34 +133,28 @@ class AppShell extends StatelessWidget {
             initialLocation: index == navigationShell.currentIndex,
           );
         },
-        destinations: [
-          NavigationDestination(
-            icon: const Icon(Icons.home_outlined),
-            selectedIcon: const Icon(Icons.home_rounded),
-            label: l10n.navHome,
-          ),
-          NavigationDestination(
-            icon: const Icon(Icons.search_outlined),
-            selectedIcon: const Icon(Icons.search_rounded),
-            label: l10n.navSearch,
-          ),
-          NavigationDestination(
-            icon: const Icon(Icons.calendar_month_outlined),
-            selectedIcon: const Icon(Icons.calendar_month_rounded),
-            label: l10n.navBookings,
-          ),
-          NavigationDestination(
-            icon: const Icon(Icons.favorite_border_rounded),
-            selectedIcon: const Icon(Icons.favorite_rounded),
-            label: l10n.navFavorites,
-          ),
-          NavigationDestination(
-            icon: const Icon(Icons.person_outline_rounded),
-            selectedIcon: const Icon(Icons.person_rounded),
-            label: l10n.navProfile,
-          ),
-        ],
+        destinations: destinations
+            .map(
+              (item) => NavigationDestination(
+                icon: item.icon,
+                selectedIcon: item.selectedIcon,
+                label: item.label,
+              ),
+            )
+            .toList(growable: false),
       ),
     );
   }
+}
+
+class AppShellDestination {
+  const AppShellDestination({
+    required this.icon,
+    required this.selectedIcon,
+    required this.label,
+  });
+
+  final Widget icon;
+  final Widget selectedIcon;
+  final String label;
 }

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_spacing.dart';
+import 'app_card.dart';
 import 'app_button.dart';
 
 class ErrorState extends StatelessWidget {
@@ -23,31 +24,41 @@ class ErrorState extends StatelessWidget {
     final textTheme = Theme.of(context).textTheme;
 
     return Center(
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          const Icon(
-            Icons.error_outline_rounded,
-            size: 40,
-            color: AppColors.error,
+      child: ConstrainedBox(
+        constraints: const BoxConstraints(maxWidth: 360),
+        child: AppCard(
+          tone: AppCardTone.muted,
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const Icon(
+                Icons.error_outline_rounded,
+                size: 40,
+                color: AppColors.error,
+              ),
+              const AppGap.v(AppSpacing.md),
+              Text(
+                title,
+                style: textTheme.titleLarge,
+                textAlign: TextAlign.center,
+              ),
+              const AppGap.v(AppSpacing.xs),
+              Text(
+                message,
+                style: textTheme.bodyMedium,
+                textAlign: TextAlign.center,
+              ),
+              if (actionLabel != null && onAction != null) ...[
+                const AppGap.v(AppSpacing.lg),
+                AppButton(
+                  label: actionLabel!,
+                  onPressed: onAction,
+                  tone: AppButtonTone.secondary,
+                ),
+              ],
+            ],
           ),
-          const AppGap.v(AppSpacing.md),
-          Text(title, style: textTheme.titleLarge, textAlign: TextAlign.center),
-          const AppGap.v(AppSpacing.xs),
-          Text(
-            message,
-            style: textTheme.bodyMedium,
-            textAlign: TextAlign.center,
-          ),
-          if (actionLabel != null && onAction != null) ...[
-            const AppGap.v(AppSpacing.lg),
-            AppButton(
-              label: actionLabel!,
-              onPressed: onAction,
-              tone: AppButtonTone.secondary,
-            ),
-          ],
-        ],
+        ),
       ),
     );
   }

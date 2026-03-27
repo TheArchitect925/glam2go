@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_spacing.dart';
 
 class SectionHeader extends StatelessWidget {
@@ -28,7 +29,12 @@ class SectionHeader extends StatelessWidget {
               Text(title, style: textTheme.headlineMedium),
               if (subtitle != null) ...[
                 const AppGap.v(AppSpacing.xs),
-                Text(subtitle!, style: textTheme.bodyMedium),
+                Text(
+                  subtitle!,
+                  style: textTheme.bodyMedium?.copyWith(
+                    color: AppColors.textMuted,
+                  ),
+                ),
               ],
             ],
           ),

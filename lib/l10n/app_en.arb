@@ -12,96 +12,644 @@
   "actionConfirmBooking": "Confirm booking",
   "actionViewBookingDetail": "Open booking detail",
   "actionOpenSettings": "Open settings",
+  "actionExploreResults": "See all results",
+  "actionBecomeArtist": "Become an artist",
+  "actionContinueAsGuest": "Continue as guest",
+  "actionRetry": "Retry",
+  "actionSubmitBookingRequest": "Submit booking request",
+  "actionSignInToSubmitRequest": "Sign in to submit request",
+  "actionSwitchToCustomer": "Switch to customer mode",
+  "actionSwitchToArtist": "Switch to artist workspace",
+  "actionKeepBooking": "Keep booking",
+  "priceStartingFrom": "From {price}",
+  "@priceStartingFrom": {
+    "placeholders": {
+      "price": {}
+    }
+  },
+  "packageDurationMinutes": "{minutes} min",
+  "@packageDurationMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
   "navHome": "Home",
   "navSearch": "Search",
   "navBookings": "Bookings",
   "navFavorites": "Favorites",
   "navProfile": "Profile",
+  "artistNavDashboard": "Dashboard",
+  "artistNavBookings": "Bookings",
+  "artistNavSettings": "Settings",
   "splashLoading": "Preparing the Glam2GO booking baseline.",
   "onboardingTitle": "Beauty booking, organized cleanly.",
   "onboardingSubtitle": "The baseline app shell is ready for customer discovery and booking flows.",
   "onboardingStatus": "Onboarding is intentionally lean in this pass. Authentication and role setup will be implemented in feature-focused passes.",
   "authSignInTitle": "Sign in",
-  "authSignInDescription": "Authentication entry scaffold for returning customers and artists.",
+  "authSignInDescription": "Return to your saved account context and continue the action you started.",
   "authSignUpTitle": "Create account",
-  "authSignUpDescription": "Registration scaffold for the Glam2GO marketplace.",
+  "authSignUpDescription": "Create a customer or artist account without losing your current browsing momentum.",
+  "authSignUpArtistHint": "Artists can start setup from here and build their public business presence without leaving the shared app.",
+  "authContinueAsCustomer": "Continue as customer",
+  "authContinueAsArtist": "Continue as artist",
+  "authPendingActionMessage": "Your browsing context is preserved. Continue with a role so you can finish the protected action without starting over.",
+  "authSignInHelper": "Continue with your Glam2GO account details to restore your session and resume protected actions cleanly.",
+  "authCreateAccountHelper": "Create an account without losing your route context, booking intent, or protected-action continuation.",
+  "authRequestFailed": "We could not complete that account request. Please try again.",
+  "authCredentialsTitle": "Account details",
+  "authCreateAccountDetailsTitle": "Create your account",
+  "authNameFieldLabel": "Full name",
+  "authNameFieldHint": "How your account should appear in Glam2GO",
+  "authNameValidationMessage": "Enter a name to continue.",
+  "authEmailFieldLabel": "Email address",
+  "authEmailFieldHint": "name@example.com",
+  "authEmailValidationMessage": "Enter a valid email address.",
+  "authBookingResumeMessage": "Your booking draft is still in progress. Sign in or create an account and the request review step will be ready to resume.",
+  "authFavoritesResumeMessage": "Your saved-artist action is waiting. Continue with an account and Glam2GO will return you to the same artist profile.",
+  "authArtistResumeMessage": "Artist tools are account-only. Continue with an artist account to enter setup or dashboard routes cleanly.",
+  "authAccountResumeMessage": "Your account route is preserved. Continue and Glam2GO will return you to the same place without restarting.",
+  "authDevShortcutTitle": "Development shortcut",
+  "authDevShortcutSubtitle": "Use a default local account when you want to skip manual entry during product work.",
+  "authUseDefaultCustomer": "Use default customer account",
+  "authUseDefaultArtist": "Use default artist account",
+  "authCreateAccountInlineCta": "Need an account? Create one",
+  "authAlreadyHaveAccountCta": "Already have an account? Sign in",
+  "authCreateCustomerAccount": "Create customer account",
+  "authCreateArtistAccount": "Join as artist",
+  "authSignOutTitle": "Sign out",
+  "authSignOutSubtitle": "Return to guest mode and keep browsing without account-only actions.",
+  "authArtistSignOutSubtitle": "Leave the artist workspace and return to guest browsing mode.",
   "homeTitle": "Home",
   "homeHeadline": "Discovery starts here.",
-  "homeDescription": "This home scaffold will grow into the premium discovery surface for nearby artists, trust signals, and occasion-led entry points.",
-  "homeStatus": "Home is scaffolded with router, theme, and localization wiring only.",
+  "homeDescription": "Browse artists for bridal, nikkah, soft glam, photoshoots, and formal events with clear pricing and travel expectations.",
+  "homeServiceAreaEyebrow": "Serving Toronto and the GTA",
+  "homeOccasionsTitle": "Book by occasion",
+  "homeOccasionsSubtitle": "Jump straight into artists that fit the event you are planning.",
+  "homeFeaturedArtistsTitle": "Featured artists",
+  "homeFeaturedArtistsSubtitle": "A premium shortlist with strong ratings, clear travel policies, and booking momentum.",
+  "homeSeeAllLabel": "See all",
+  "homePopularPackagesTitle": "Popular packages",
+  "homePopularPackagesSubtitle": "Compare the most-booked service types before you commit to a profile.",
+  "homePackageAction": "View package",
+  "homeTrustTitle": "Why discovery feels clear on Glam2GO",
+  "homeTrustPricing": "Starting prices and package inclusions are visible early.",
+  "homeTrustTravel": "Travel radius and extra distance fees are explained upfront.",
+  "homeTrustAvailability": "Availability previews help you decide before entering the booking flow.",
+  "discoveryLoadingMessage": "Loading artists and packages for discovery.",
+  "discoveryLoadErrorTitle": "We could not load artists right now",
+  "discoveryLoadErrorMessage": "Check your connection and try again. Glam2GO will retry the discovery feed when you are ready.",
   "searchTitle": "Search",
   "searchHeadline": "Search and filter artists.",
-  "searchDescription": "Search is wired into the app shell and ready for real filtering state in a future pass.",
-  "searchStatus": "Search is scaffolded but intentionally not populated with fake data.",
+  "searchDescription": "Search by artist name, occasion, or style and narrow the list with simple, readable filters.",
+  "searchInputHint": "Search by artist, style, or occasion",
   "searchResultsTitle": "Search results",
   "searchResultsHeadline": "Review candidate artists.",
-  "searchResultsDescription": "Results routing is in place so the discovery flow can deepen without route drift.",
-  "searchResultsStatus": "No seeded artist catalog is shown in this pass.",
+  "searchResultsDescription": "Compare artists quickly by trust signals, travel fit, availability, and starting price.",
+  "sortPlaceholderLabel": "Sort",
+  "searchEmptyTitle": "No artists match that search yet",
+  "searchEmptyMessage": "Try a broader search or clear the occasion filter to see more available artists.",
+  "searchEmptyReset": "Clear filters",
   "artistProfileTitle": "Artist profile",
   "artistProfileHeadline": "Evaluate artist fit.",
-  "artistProfileStatus": "Artist profile is scaffolded for portfolio, package, pricing, and trust sections.",
+  "artistProfileAboutTitle": "About this artist",
+  "artistProfilePortfolioTitle": "Portfolio preview",
+  "artistProfilePortfolioSubtitle": "A quick look at finish, style direction, and event fit.",
+  "artistProfilePackagesTitle": "Packages and services",
+  "artistProfilePackagesSubtitle": "Clear inclusions, duration, and starting price before the booking flow.",
+  "artistProfilePackageAction": "Select package",
+  "artistProfileAvailabilityTitle": "Availability preview",
+  "artistProfileTravelTitle": "Travel and service area",
+  "artistProfileReviewTitle": "Client signal",
+  "artistProfileMissingTitle": "Artist not found",
+  "artistProfileMissingMessage": "This artist profile is no longer available.",
   "packageDetailsTitle": "Package details",
   "packageDetailsHeadline": "Inspect package details cleanly.",
-  "packageDetailsStatus": "Package detail scaffolding exists without fake package content.",
+  "packageMissingTitle": "Package not found",
+  "packageMissingMessage": "This package is no longer available for booking.",
   "bookingStartTitle": "Booking",
-  "bookingStartHeadline": "Start a structured booking.",
-  "bookingStartDescription": "The booking entry flow is wired and ready for real booking state.",
-  "bookingStartStatus": "No backend booking state or payment integration is attached in this pass.",
-  "bookingDateTimeTitle": "Date and time",
-  "bookingDateTimeHeadline": "Choose the appointment slot.",
-  "bookingDateTimeDescription": "Date and time selection will connect to artist availability in a dedicated booking pass.",
-  "bookingDateTimeStatus": "Availability logic is intentionally not implemented yet.",
+  "bookingStartHeadline": "Choose your service.",
+  "bookingStartDescription": "Confirm the package you want before moving into event details, schedule selection, and location pricing.",
+  "bookingStartMissingArtistTitle": "Choose an artist first",
+  "bookingStartMissingArtistMessage": "Start booking from an artist profile or package so the flow knows who you are booking with.",
+  "bookingContinueToDetails": "Continue to event details",
+  "bookingDetailsTitle": "Event details",
+  "bookingDetailsHeadline": "Set the booking context.",
+  "bookingDetailsDescription": "Keep this step lean: tell the artist what type of event this is and anything important about the look.",
+  "bookingOccasionField": "Occasion",
+  "bookingPartySizeField": "Party size",
+  "bookingNotesField": "Booking notes",
+  "bookingNotesHint": "Share look preferences, start-time constraints, or anything the artist should know.",
+  "bookingBackToService": "Back to service",
+  "bookingMissingServiceMessage": "Pick a package before continuing with the booking flow.",
+  "bookingDateTitle": "Date",
+  "bookingDateHeadline": "Choose the appointment date.",
+  "bookingDateDescription": "These dates are a preview of likely availability. Final confirmation still depends on artist approval.",
+  "bookingDateHint": "Flexible timing can improve approval odds.",
+  "bookingBackToDetails": "Back to details",
+  "bookingContinueToTime": "Continue to time",
+  "bookingTimeTitle": "Time",
+  "bookingTimeHeadline": "Choose a time slot.",
+  "bookingTimeDescription": "Pick a time that fits the appointment window and travel setup for the artist.",
+  "bookingBackToDate": "Back to date",
   "bookingLocationTitle": "Location",
-  "bookingLocationHeadline": "Set the service address.",
-  "bookingLocationDescription": "Location and travel-fee rules will build on the booking foundation without hiding pricing impact.",
-  "bookingLocationStatus": "Address collection and distance pricing remain future implementation work.",
-  "bookingCheckoutTitle": "Checkout",
-  "bookingCheckoutHeadline": "Review before confirmation.",
-  "bookingCheckoutDescription": "Checkout is present as a route and UI scaffold only.",
-  "bookingCheckoutStatus": "Payment remains a placeholder architecture concern for a later pass.",
+  "bookingLocationHeadline": "Add the service address.",
+  "bookingLocationDescription": "This step keeps travel expectations clear before you confirm the request.",
+  "bookingAddressLine1Field": "Address line 1",
+  "bookingAddressLine1Hint": "Street address",
+  "bookingUnitField": "Unit or access details",
+  "bookingUnitHint": "Apartment, condo entry, or suite number",
+  "bookingCityField": "City or area",
+  "bookingCityHint": "Toronto, Mississauga, Scarborough, North York...",
+  "bookingAccessNotesField": "Access notes",
+  "bookingAccessNotesHint": "Parking, concierge, elevator, or timing notes",
+  "bookingTravelPreviewTitle": "Travel preview",
+  "bookingTravelPendingTitle": "Travel estimate will update after address review",
+  "bookingTravelIncludedTitle": "Travel included for this request",
+  "bookingTravelExtraTitle": "Additional travel fee may apply",
+  "bookingBackToTime": "Back to time",
+  "bookingReviewTitle": "Review booking",
+  "bookingReviewHeadline": "Review before you confirm.",
+  "bookingReviewDescription": "This is the clean summary of what you are requesting from the artist before final submission.",
+  "bookingReviewIncompleteMessage": "Complete the earlier booking steps before reviewing the request.",
+  "bookingReviewServiceTitle": "Service selection",
+  "bookingReviewEventTitle": "Event details",
+  "bookingReviewScheduleTitle": "Schedule",
+  "bookingReviewLocationTitle": "Location and travel",
+  "bookingReviewPriceTitle": "Price summary",
+  "bookingReviewApprovalNote": "Submitting this step sends a booking request to the artist. The appointment is only confirmed after the artist accepts.",
+  "bookingEditLabel": "Edit",
+  "bookingArtistLabel": "Artist",
+  "bookingPackageLabel": "Package",
+  "bookingOccasionLabel": "Occasion",
+  "bookingPartySizeLabel": "Party size",
+  "bookingNotesLabel": "Notes",
+  "bookingDateLabel": "Date",
+  "bookingTimeLabel": "Time",
+  "bookingNoNotesValue": "No extra notes",
+  "bookingPriceSubtotalLabel": "Service subtotal",
+  "bookingPriceTravelLabel": "Travel estimate",
+  "bookingPriceTotalLabel": "Estimated total",
   "bookingConfirmationTitle": "Confirmation",
-  "bookingConfirmationHeadline": "Booking confirmation will live here.",
-  "bookingConfirmationStatus": "Confirmation is scaffolded as a stable destination route.",
+  "bookingConfirmationHeadline": "Your booking request is in.",
+  "bookingConfirmationStatus": "Confirmation is now wired to the draft booking flow.",
+  "bookingConfirmationMissingTitle": "No confirmation available",
+  "bookingConfirmationMissingMessage": "This confirmation screen needs a valid in-session booking request.",
+  "bookingConfirmationNextStep": "The artist reviews your request next. You will see accepted or declined status updates in your bookings list.",
+  "bookingConfirmationSummaryTitle": "Requested booking",
+  "bookingConfirmationHomeCta": "Back to home",
+  "bookingConfirmationBookingsCta": "View bookings",
   "bookingsTitle": "Bookings",
   "bookingsHeadline": "Track upcoming and past bookings.",
-  "bookingsDescription": "Bookings are part of the authenticated customer shell from the start.",
-  "bookingsStatus": "Booking history data and states will be added in a dedicated pass.",
+  "bookingsDescription": "Review upcoming appointments, revisit past looks, and keep status, timing, and location details in one place.",
+  "bookingsStatus": "Booking history is now connected to local account data and current in-session confirmations.",
+  "bookingsUpcomingTab": "Upcoming",
+  "bookingsPastTab": "Past",
+  "bookingsUpcomingEmptyTitle": "No upcoming bookings yet",
+  "bookingsUpcomingEmptyMessage": "Once you request a booking, it will appear here with status, schedule, and travel details.",
+  "bookingsPastEmptyTitle": "No past bookings yet",
+  "bookingsPastEmptyMessage": "Completed appointments will stay here for quick reference and future rebooking.",
   "bookingDetailTitle": "Booking detail",
   "bookingDetailHeadline": "Review one booking.",
-  "bookingDetailStatus": "This route exists now to keep detail navigation stable.",
+  "bookingDetailStatus": "Booking detail is now connected to local customer booking data.",
+  "bookingDetailSummaryTitle": "Booking summary",
+  "bookingDetailNotesTitle": "Booking notes",
+  "bookingDetailNextTitle": "What happens next",
+  "bookingDetailPolicyTitle": "Policy and support",
+  "bookingDetailSupportCta": "Help and policies",
+  "bookingDetailCancelCta": "Cancel request",
+  "bookingDetailCancelTitle": "Cancel this booking request?",
+  "bookingDetailCancelMessage": "This keeps the request in your history, but it will no longer be treated as an active appointment or pending artist review.",
+  "bookingDetailMissingTitle": "Booking not found",
+  "bookingDetailMissingMessage": "This booking detail is no longer available in the current local account state.",
+  "bookingTimelineTitle": "Request timeline",
   "favoritesTitle": "Favorites",
-  "favoritesHeadline": "Save artists worth revisiting.",
-  "favoritesDescription": "Favorites are scaffolded as a first-class customer destination.",
-  "favoritesStatus": "No persistence layer is connected yet.",
+  "favoritesHeadline": "Saved artists, ready to revisit.",
+  "favoritesDescription": "Keep a short list of artists you trust so you can return to profiles and booking entry points quickly.",
+  "favoritesStatus": "Favorites are stored locally for now and can be replaced by a connected account layer later.",
+  "favoritesEmptyTitle": "No saved artists yet",
+  "favoritesEmptyMessage": "Save artists from their profile to build a shortlist for later booking.",
+  "favoritesRemoveTooltip": "Remove from favorites",
   "profileTitle": "Profile",
   "profileHeadline": "Manage your account.",
   "profileDescription": "Profile and settings stay narrow in V1 and expand only when justified.",
-  "profileStatus": "Profile is scaffolded for account-level work, not yet feature-complete.",
+  "profileStatus": "Profile now acts as the customer account hub for bookings, favorites, addresses, and preferences.",
+  "profileHubTitle": "Account hub",
+  "profileHubSubtitle": "Move between bookings, saved artists, and service-ready addresses without losing context.",
+  "profileBookingsSummary": "{count, plural, =0{No upcoming bookings} one{1 upcoming booking} other{{count} upcoming bookings}}",
+  "@profileBookingsSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profileFavoritesSummary": "{count, plural, =0{No saved artists} one{1 saved artist} other{{count} saved artists}}",
+  "@profileFavoritesSummary": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profileNoDefaultAddressSummary": "No default address selected yet",
+  "profileWelcomeTitle": "Finish your account setup",
+  "profileWelcomeMessage": "Add a saved address and tune notification preferences so booking requests stay easy to track.",
+  "profilePreferencesTitle": "Preferences",
+  "profilePreferencesSubtitle": "A light foundation for service area context, style preferences, and notification expectations.",
+  "profilePreferredAreaTitle": "Preferred service area",
+  "profilePreferredOccasionsTitle": "Preferred occasions",
+  "profileCommunicationTitle": "Communication preference",
+  "profileAccountTitle": "Account and support",
+  "profileNotificationsShortcut": "Manage booking updates, artist responses, reminders, and product news.",
+  "profileSwitchToArtistMessage": "Switch into the artist workspace without leaving the shared app.",
   "profileEditTitle": "Edit profile",
   "profileEditHeadline": "Update account details.",
-  "profileEditDescription": "Profile editing is reserved as a stable route for future implementation.",
+  "profileEditDescription": "Keep the basic customer profile current so booking coordination stays straightforward.",
+  "profileEditNameField": "Full name",
+  "profileEditEmailField": "Email",
+  "profileEditPhoneField": "Phone number",
+  "profileEditCancelCta": "Cancel",
+  "profileEditSaveCta": "Save profile",
   "settingsTitle": "Settings",
   "settingsHeadline": "Control app preferences.",
-  "settingsDescription": "Settings will grow carefully as localization and account options mature.",
-  "settingsStatus": "Settings are intentionally minimal in this pass.",
+  "settingsDescription": "Adjust reminders, communication defaults, and trust-related app information without turning this area into account sprawl.",
+  "settingsStatus": "Settings now cover notification and trust preferences, with account complexity still intentionally limited.",
+  "settingsNotificationsTitle": "Notifications",
+  "settingsNotificationsSubtitle": "Keep booking updates useful and timely without creating noise.",
+  "notificationsHeadline": "Manage notifications",
+  "notificationsCustomerDescription": "Choose which booking and artist-response updates should reach you first as the marketplace lifecycle evolves.",
+  "notificationsArtistDescription": "Keep artist-side requests and business updates visible without turning the dashboard into a noisy inbox.",
+  "notificationsGateTitle": "Sign in to manage notifications",
+  "notificationsGateMessage": "Notification preferences are tied to an account session so the app can restore them cleanly later.",
+  "notificationsDeliveryTitle": "Delivery readiness",
+  "notificationsDeliveryPlaceholder": "Notification delivery wiring is prepared and can bind to platform tokens once push configuration is enabled.",
+  "notificationsDeliverySignedIn": "Notification delivery wiring is ready for this signed-in session. Device token registration and push transport stay behind the environment-controlled delivery boundary.",
+  "notificationsDeliveryError": "Notification delivery status is unavailable right now.",
+  "notificationsArtistResponsesTitle": "Artist responses",
+  "notificationsArtistResponsesSubtitle": "Accepted, declined, and other lifecycle responses on your booking requests.",
+  "notificationsAccountShortcut": "Booking updates, artist responses, reminders, and product news.",
+  "notificationsArtistShortcut": "Incoming requests and artist-side business updates.",
+  "settingsBookingUpdatesTitle": "Booking updates",
+  "settingsBookingUpdatesSubtitle": "Artist approval, status changes, and key booking updates.",
+  "settingsRemindersTitle": "Appointment reminders",
+  "settingsRemindersSubtitle": "Start-time reminders and preparation nudges before your appointment.",
+  "settingsPromotionsTitle": "Product updates",
+  "settingsPromotionsSubtitle": "Occasional product news, seasonal availability, and service highlights.",
+  "settingsAppPreferencesTitle": "App preferences",
+  "settingsLanguageTitle": "Language",
+  "settingsLanguageSubtitle": "English is active in this baseline. Locale switching can be added later.",
+  "settingsAreaContextTitle": "Saved address and area context",
+  "settingsHelpTitle": "Help, privacy, and trust",
+  "settingsPrivacyTitle": "Privacy",
+  "settingsPrivacySubtitle": "Address and event details are only captured to support booking coordination and travel clarity.",
+  "settingsTermsTitle": "Terms of service",
+  "settingsTermsSubtitle": "Review the current editable marketplace terms draft before public release.",
+  "settingsBookingPolicyTitle": "Booking policy",
+  "settingsBookingPolicySubtitle": "Request-state booking guidance, travel clarity, and support expectations.",
+  "settingsAboutTitle": "About Glam2GO",
+  "settingsAboutSubtitle": "A premium beauty-service marketplace baseline for customer discovery and booking.",
+  "savedAddressesTitle": "Saved addresses",
+  "savedAddressesHeadline": "Manage service-ready locations.",
+  "savedAddressesDescription": "Keep a small list of trusted service addresses so future booking reuse stays fast and clear.",
+  "savedAddressesDefaultLabel": "Default",
+  "savedAddressesFutureTitle": "Address management stays intentionally lean",
+  "savedAddressesFutureMessage": "Add and edit flows can connect later. This pass focuses on clear reuse, default selection, and booking-readiness.",
+  "supportTitle": "Help and policies",
+  "supportHeadline": "Help, policies, and next steps in one place.",
+  "supportDescription": "Find booking guidance, policy details, and the right support path without leaving the app guessing.",
+  "supportEntryTitle": "Get help",
+  "supportEntrySubtitle": "Use these links for booking guidance, support direction, and policy details during beta and launch prep.",
+  "supportEntryChatTitle": "Contact support",
+  "supportEntryChatMessage": "Replace this placeholder with your final support channel before launch so customers know exactly where to ask for help.",
+  "supportEntryPolicyTitle": "Before you book",
+  "supportEntryPolicyMessage": "Review booking and cancellation guidance here so expectations stay clear before an appointment is accepted.",
+  "supportPoliciesTitle": "Policies",
+  "supportPoliciesSubtitle": "Keep the most important platform policies easy to find from customer and artist settings.",
+  "supportPrivacySummary": "Review the current editable privacy draft and how Glam2GO handles account, address, and booking coordination data.",
+  "supportTermsSummary": "Review the current editable platform terms draft for marketplace access, account usage, and release-stage limitations.",
+  "supportCancellationSummary": "Review how booking requests, artist responses, and cancellation handling are currently explained in V1.",
+  "supportBookingSummary": "Review request-state booking expectations, travel clarity, and when to use support instead of self-serve actions.",
+  "supportFaqTitle": "Common questions",
+  "supportFaqSubtitle": "Answer the questions testers and early users ask most often without adding a heavy support flow.",
+  "supportFaqBookingTitle": "Booking requests and confirmations",
+  "supportFaqBookingMessage": "Glam2GO currently treats booking submission as a request. Customers should rely on accepted status, not request submission alone, before treating the appointment as confirmed.",
+  "supportFaqArtistTitle": "Artist-side setup and updates",
+  "supportFaqArtistMessage": "Artists can manage profile, packages, availability, travel policy, and portfolio metadata. Media upload and moderation remain intentionally limited until those contracts are connected.",
+  "supportFaqAccountTitle": "Account and session guidance",
+  "supportFaqAccountMessage": "Use the same shared app for guest browsing, customer account flows, and artist workspace entry. If a session expires, sign in again and Glam2GO will try to return you to the correct route.",
+  "policyDraftNoticeTitle": "Draft legal content",
+  "policyDraftNoticeMessage": "This screen is structurally ready for launch review, but the text should be replaced with approved legal or operations copy before public release.",
+  "policyPrivacyTitle": "Privacy policy",
+  "policyPrivacyHeadline": "Privacy and data handling, explained clearly.",
+  "policyPrivacyDescription": "This V1 draft explains the main types of customer, artist, and booking data the app currently uses.",
+  "policyPrivacyCollectionTitle": "What Glam2GO collects",
+  "policyPrivacyCollectionBody": "Glam2GO currently stores account basics, booking request details, saved addresses, travel-related booking context, and artist business setup information needed to run discovery and booking coordination.",
+  "policyPrivacyUseTitle": "How that data is used",
+  "policyPrivacyUseBody": "This data is used to restore sessions, power discovery, support booking requests, show artist availability and travel expectations, and keep customer and artist status updates coherent across the marketplace lifecycle.",
+  "policyPrivacyContactTitle": "Privacy updates and support",
+  "policyPrivacyContactBody": "Until a final support and legal workflow is connected, privacy-related questions should route through the main help surface so the team can respond with the latest approved guidance.",
+  "policyTermsTitle": "Terms of service",
+  "policyTermsHeadline": "Marketplace terms, kept honest for V1.",
+  "policyTermsDescription": "This V1 draft explains how Glam2GO currently frames account use, booking requests, and release-stage limitations.",
+  "policyTermsMarketplaceTitle": "Marketplace expectations",
+  "policyTermsMarketplaceBody": "Glam2GO is a beauty-service marketplace that connects customers and artists. Booking submission does not guarantee a confirmed appointment unless the lifecycle later reflects artist acceptance.",
+  "policyTermsAccountsTitle": "Account usage and access",
+  "policyTermsAccountsBody": "Guests can browse discovery and booking setup, while saved actions and artist tools require an authenticated account. Role-aware routing and protected actions are part of the current product experience.",
+  "policyTermsEditsTitle": "Release-stage limitations",
+  "policyTermsEditsBody": "This app is still operating with some hybrid local and remote behavior. Product and policy details may be refined as backend contracts, support operations, and legal review become final.",
+  "policyCancellationTitle": "Cancellation policy",
+  "policyCancellationHeadline": "Cancellation expectations for the current release stage.",
+  "policyCancellationDescription": "This V1 draft explains how cancellation is currently represented in the app and where manual support is still required.",
+  "policyCancellationRequestsTitle": "Pending requests",
+  "policyCancellationRequestsBody": "Pending booking requests can be cancelled by the customer in-app. That keeps the request in history but removes it from active review or active appointment treatment.",
+  "policyCancellationAcceptedTitle": "Accepted bookings",
+  "policyCancellationAcceptedBody": "Accepted bookings can currently be marked as cancelled in-app, but policy enforcement, refunds, and reschedule handling are not yet represented as a full production workflow.",
+  "policyCancellationSupportTitle": "When support is needed",
+  "policyCancellationSupportBody": "Use support for anything that requires exception handling, manual coordination, or clarification beyond the current self-serve cancellation surface.",
+  "policyBookingTitle": "Booking policy",
+  "policyBookingHeadline": "Booking expectations and lifecycle clarity.",
+  "policyBookingDescription": "This V1 draft keeps request-state wording, travel expectations, and what-happens-next guidance explicit for customers and artists.",
+  "policyBookingRequestsTitle": "Request submission",
+  "policyBookingRequestsBody": "Submitting a booking sends a request to the artist. Customers should wait for accepted status before treating the booking as confirmed, and artists should review request details before accepting.",
+  "policyBookingTravelTitle": "Travel and location clarity",
+  "policyBookingTravelBody": "Travel fees and service-area summaries are shown as part of booking context. Final operational handling may still depend on backend validation and connected policy logic.",
+  "policyBookingSupportTitle": "Support and trust",
+  "policyBookingSupportBody": "Use support surfaces when booking status, travel expectations, or release-stage limitations are unclear. Keep trust language aligned with the shared lifecycle rather than treating requests as guaranteed appointments.",
+  "customerModeRequiredMessage": "This part of Glam2GO is currently tied to the customer experience. Switch to customer mode to continue.",
+  "guestBookingsGateTitle": "Sign in to view your bookings",
+  "guestBookingsGateMessage": "Guests can explore artists and packages, but bookings history and request tracking need a customer account.",
+  "guestFavoritesGateTitle": "Save artists with an account",
+  "guestFavoritesGateMessage": "Guests can browse freely, but saving artists for later needs a customer account.",
+  "guestFavoritesActionMessage": "Save this artist after signing in or creating an account. Your current profile view will stay easy to return to.",
+  "guestProfileGateTitle": "Sign in to manage your account",
+  "guestProfileGateMessage": "Profile, saved preferences, and booking-ready account details need a customer account.",
+  "guestSettingsGateTitle": "Sign in to change account settings",
+  "guestSettingsGateMessage": "Notification preferences, saved-area context, and account controls are only available after sign-in.",
+  "guestAddressesGateTitle": "Sign in to manage saved addresses",
+  "guestAddressesGateMessage": "Saved service addresses are tied to customer account reuse in future bookings.",
+  "bookingStatusPending": "Pending approval",
+  "bookingStatusConfirmed": "Confirmed",
+  "bookingStatusAccepted": "Accepted",
+  "bookingStatusDeclined": "Declined",
+  "bookingStatusCancelled": "Cancelled",
+  "bookingStatusCompleted": "Completed",
+  "bookingLoadingMessage": "Loading booking updates...",
+  "bookingLoadErrorTitle": "Booking updates need another try",
+  "bookingLoadErrorMessage": "We couldn't refresh the latest booking lifecycle details. Try again in a moment.",
+  "bookingSubmissionFailedMessage": "We couldn't submit your booking request right now. Try again in a moment.",
+  "artistFavoriteTooltip": "Save artist",
+  "artistOnboardingTitle": "Artist onboarding",
+  "artistOnboardingHeadline": "Set up your artist profile.",
+  "artistOnboardingDescription": "Create the minimum professional setup needed to become discoverable and booking-ready later.",
+  "artistOnboardingWelcomeTitle": "Become a Glam2GO artist",
+  "artistOnboardingWelcomeSubtitle": "This flow keeps setup guided and lean: profile, specialties, travel, packages, and availability.",
+  "artistOnboardingProfileStepTitle": "Profile basics",
+  "artistOnboardingSpecialtiesTitle": "Specialties",
+  "artistOnboardingTravelTitle": "Service area and travel",
+  "artistOnboardingPackagesTitle": "Packages",
+  "artistOnboardingPackagesSummary": "Keep packages clean, event-specific, and transparent before publish-ready availability is connected.",
+  "artistOnboardingAvailabilityTitle": "Availability",
+  "artistOnboardingAvailabilitySummary": "Weekly availability is rule-based for now and can later connect to a richer calendar system.",
+  "artistOnboardingSummaryTitle": "Readiness summary",
+  "artistOnboardingSummaryReady": "Your current mock setup is structurally ready for public discovery later.",
+  "artistOnboardingSummaryMissing": "Still incomplete: {items}",
+  "@artistOnboardingSummaryMissing": {
+    "placeholders": {
+      "items": {}
+    }
+  },
+  "artistOnboardingContinueCta": "Open artist dashboard",
+  "artistOnboardingEditProfileCta": "Edit public profile",
+  "artistOnboardingCurrentStep": "Step {current} of {total}",
+  "@artistOnboardingCurrentStep": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "artistDashboardTitle": "Artist dashboard",
+  "artistDashboardHeadline": "Run your Glam2GO setup from one place.",
+  "artistDashboardDescription": "Review readiness, upcoming bookings, package coverage, availability, and travel setup without switching to a second app.",
+  "artistDashboardCompletionTitle": "Profile readiness",
+  "artistDashboardPackagesTitle": "Packages",
+  "artistDashboardPackagesSubtitle": "Active service setup",
+  "artistDashboardAvailabilityTitle": "Availability",
+  "artistDashboardAvailabilitySubtitle": "Weekly availability days",
+  "artistDashboardServiceAreaTitle": "Service area",
+  "artistDashboardBookingsTitle": "Upcoming",
+  "artistDashboardBookingsSubtitle": "Current booking visibility",
+  "artistDashboardPendingBookingsSubtitle": "{count, plural, =0{No accepted appointments yet} one{1 accepted appointment} other{{count} accepted appointments}}",
+  "@artistDashboardPendingBookingsSubtitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "artistDashboardQuickActionsTitle": "Quick actions",
+  "artistDashboardQuickActionsSubtitle": "Move directly into the setup surfaces that affect discoverability and booking readiness.",
+  "artistDashboardEditProfileCta": "Edit profile",
+  "artistDashboardManagePackagesCta": "Manage packages",
+  "artistDashboardManageAvailabilityCta": "Manage availability",
+  "artistDashboardViewBookingsCta": "View bookings",
+  "artistDashboardNextBookingsTitle": "Next bookings overview",
+  "artistProfileManagementTitle": "Artist profile",
+  "artistProfileManagementHeadline": "Manage your public profile.",
+  "artistProfileManagementDescription": "Everything here should map cleanly to what customers eventually see in discovery and profile view.",
+  "artistProfileDisplayNameField": "Business or display name",
+  "artistProfileBioField": "Short bio",
+  "artistProfileExperienceField": "Experience summary",
+  "artistProfileInstagramField": "Instagram handle",
+  "artistProfileTikTokField": "TikTok handle",
+  "artistProfileSpecialtiesTitle": "Specialties and style tags",
+  "artistProfileSaveCta": "Save profile details",
+  "artistProfileValidationMessage": "Add a display name, a short bio, and at least one specialty before saving.",
+  "artistProfileSavedMessage": "Artist profile updated.",
+  "artistPortfolioTitle": "Portfolio management",
+  "artistPortfolioAddCta": "Add portfolio item",
+  "artistPortfolioSaveCta": "Save portfolio item",
+  "artistPortfolioEmptyTitle": "No portfolio items yet",
+  "artistPortfolioEmptyMessage": "Add a few polished examples so discovery can communicate trust and style direction clearly.",
+  "artistPortfolioAddSheetTitle": "Add portfolio item",
+  "artistPortfolioEditSheetTitle": "Edit portfolio item",
+  "artistPortfolioEditorMessage": "Portfolio metadata is ready now. Media upload is kept behind a clean integration boundary until storage contracts are enabled.",
+  "artistPortfolioTitleField": "Look title",
+  "artistPortfolioCategoryField": "Category or style",
+  "artistPortfolioCaptionField": "Caption",
+  "artistPortfolioValidationMessage": "Add a title, category, and caption before saving.",
+  "artistPortfolioUploadPlaceholderNote": "Media upload and ordering stay intentionally lightweight in this phase. Save polished metadata now so the portfolio structure remains ready for external beta.",
+  "artistPortfolioMediaPending": "Media pending",
+  "artistPortfolioMediaReady": "Media ready",
+  "artistPortfolioMediaStatusNote": "Media selection and upload stay behind the repository boundary so beta wiring can evolve without changing this UI.",
+  "artistPortfolioRemoveCta": "Remove item",
+  "artistPortfolioRemoveTitle": "Remove portfolio item?",
+  "artistPortfolioRemoveMessage": "This removes the item from your public portfolio structure, but the media upload pipeline is still intentionally limited in this phase.",
+  "artistPackagesTitle": "Packages",
+  "artistPackagesHeadline": "Manage packages and services.",
+  "artistPackagesDescription": "Define clean package titles, inclusions, pricing, and event fit so customers can compare them quickly.",
+  "artistPackagesAddCta": "Add package",
+  "artistPackagesEditCta": "Edit package",
+  "artistPackagesSaveCta": "Save package",
+  "artistPackagesSavedMessage": "Package details updated.",
+  "artistPackagesActivateCta": "Mark active",
+  "artistPackagesDeactivateCta": "Mark inactive",
+  "artistPackagesActiveField": "Package is active",
+  "artistPackageTitleField": "Package title",
+  "artistPackageDescriptionField": "Description",
+  "artistPackagePriceField": "Price",
+  "artistPackageDurationField": "Duration (minutes)",
+  "artistPackageIncludesField": "Included items (comma separated)",
+  "artistPackageOccasionsField": "Suitable occasions (comma separated)",
+  "artistPackageValidationMessage": "Add a title, description, price, duration, inclusions, and suitable occasions before saving.",
+  "artistAvailabilityTitle": "Availability",
+  "artistAvailabilityHeadline": "Set weekly availability.",
+  "artistAvailabilityDescription": "Keep availability rule-based and predictable for now. Weekly windows can later connect to a fuller calendar engine.",
+  "artistAvailabilityAvailableLabel": "Available",
+  "artistAvailabilityUnavailableLabel": "Unavailable",
+  "artistAvailabilityAddWindowCta": "Add time window",
+  "artistAvailabilityEditWindowCta": "Edit time window",
+  "artistAvailabilityStartField": "Start time",
+  "artistAvailabilityEndField": "End time",
+  "artistAvailabilitySaveCta": "Save window",
+  "artistAvailabilitySavedMessage": "Availability updated.",
+  "artistAvailabilityValidationMessage": "Add both a start time and an end time.",
+  "artistTravelTitle": "Service area",
+  "artistTravelHeadline": "Define travel policy clearly.",
+  "artistTravelDescription": "Travel setup should feel transparent and operational, not punitive. This data should later connect directly to customer-side booking logic.",
+  "artistTravelAreaField": "Primary service area",
+  "artistTravelRadiusField": "Included radius (km)",
+  "artistTravelFeeField": "Extra travel fee from",
+  "artistTravelMaxDistanceField": "Max travel distance (km)",
+  "artistTravelNotesField": "Travel notes",
+  "artistTravelSaveCta": "Save travel policy",
+  "artistTravelValidationMessage": "Add a primary service area, included radius, and max travel distance before saving.",
+  "artistTravelSavedMessage": "Travel policy updated.",
+  "artistTravelFeePreview": "Travel fee +${fee}",
+  "@artistTravelFeePreview": {
+    "placeholders": {
+      "fee": {
+        "type": "int"
+      }
+    }
+  },
+  "artistTravelRadiusValue": "{km} km included",
+  "@artistTravelRadiusValue": {
+    "placeholders": {
+      "km": {
+        "type": "int"
+      }
+    }
+  },
+  "artistTravelSummaryValue": "{area} • {km} km included",
+  "@artistTravelSummaryValue": {
+    "placeholders": {
+      "area": {},
+      "km": {
+        "type": "int"
+      }
+    }
+  },
+  "artistBookingsTitle": "Artist bookings",
+  "artistBookingsHeadline": "Review requests and appointments.",
+  "artistBookingsDescription": "This is the operational booking overview foundation for artists. Accept/decline and deeper workflows can connect later.",
+  "artistBookingsRequestsTab": "Requests",
+  "artistBookingsUpcomingTab": "Upcoming",
+  "artistBookingsPastTab": "Past",
+  "artistBookingsEmptyTitle": "No artist bookings yet",
+  "artistBookingsEmptyMessage": "Booking requests and appointments will appear here once marketplace flows are connected.",
+  "artistBookingAcceptCta": "Accept request",
+  "artistBookingDeclineCta": "Decline request",
+  "artistSettingsTitle": "Artist settings",
+  "artistSettingsHeadline": "Business preferences and shortcuts.",
+  "artistSettingsDescription": "Keep artist-side settings practical: notifications, business setup shortcuts, and help/policy access.",
+  "artistSettingsNotificationsTitle": "Notifications",
+  "artistSettingsRequestsTitle": "Booking request alerts",
+  "artistSettingsRequestsSubtitle": "Get notified when a new request needs review or schedule confirmation.",
+  "artistSettingsBusinessTitle": "Business settings",
+  "artistMutationSavingLabel": "Saving...",
+  "artistMutationFailedMessage": "We couldn't save that update right now. Try again.",
+  "artistSettingsBusinessSubtitle": "Stay aware of package, availability, and service-area updates.",
+  "artistSettingsProfileShortcut": "Update the public-facing profile customers will discover later.",
+  "artistSettingsTravelShortcut": "Review radius, extra-fee setup, and service-area notes.",
+  "artistSettingsSupportShortcut": "Support, policies, and platform guidance.",
+  "artistSettingsPolicyShortcut": "Shared booking-policy guidance for artist-side operational use.",
+  "artistSettingsSwitchToCustomerMessage": "Return to customer browsing, bookings, and saved-account surfaces.",
+  "artistBookingStatusPending": "Pending request",
+  "artistBookingStatusConfirmed": "Confirmed",
+  "artistBookingStatusCompleted": "Completed",
+  "artistReadinessProgress": "{completed} of {total} readiness steps complete",
+  "@artistReadinessProgress": {
+    "placeholders": {
+      "completed": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "artistReadinessProfileLabel": "profile",
+  "artistReadinessSpecialtiesLabel": "specialties",
+  "artistReadinessTravelLabel": "travel",
+  "artistReadinessPackagesLabel": "packages",
+  "artistReadinessAvailabilityLabel": "availability",
+  "artistPackageCount": "{count, plural, =0{No packages yet} one{1 package} other{{count} packages}}",
+  "@artistPackageCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "artistAvailabilityDayCount": "{count, plural, =0{No active days yet} one{1 active day} other{{count} active days}}",
+  "@artistAvailabilityDayCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "scaffoldIncompleteMessage": "This screen is a baseline scaffold only. Business logic and production content will be added in later feature passes.",
-  "artistProfileDescription": "Artist profile route loaded for artist id: {artistId}.",
-  "@artistProfileDescription": {
+  "searchResultsCount": "{count, plural, =0{No artists} one{1 artist} other{{count} artists}}",
+  "@searchResultsCount": {
     "placeholders": {
-      "artistId": {}
+      "count": {
+        "type": "int"
+      }
     }
   },
-  "packageDetailsDescription": "Package detail route loaded for package id: {packageId}.",
-  "@packageDetailsDescription": {
+  "artistProfileTravelRadius": "{km} km service radius included",
+  "@artistProfileTravelRadius": {
     "placeholders": {
-      "packageId": {}
+      "km": {
+        "type": "int"
+      }
     }
   },
-  "bookingSelectedPackageDescription": "Booking route loaded for artist {artistId} and package {packageId}.",
-  "@bookingSelectedPackageDescription": {
+  "artistProfileTravelFee": "Travel beyond the included radius starts from {fee}.",
+  "@artistProfileTravelFee": {
     "placeholders": {
-      "artistId": {},
-      "packageId": {}
+      "fee": {}
+    }
+  },
+  "artistProfileTravelDistance": "Willing to travel up to {km} km for the right booking.",
+  "@artistProfileTravelDistance": {
+    "placeholders": {
+      "km": {
+        "type": "int"
+      }
+    }
+  },
+  "packageDetailsForArtist": "Selected from {artistName}",
+  "@packageDetailsForArtist": {
+    "placeholders": {
+      "artistName": {}
     }
   },
   "bookingConfirmationDescription": "Confirmation route loaded for booking id: {bookingId}.",
@@ -114,6 +662,48 @@
   "@bookingDetailDescription": {
     "placeholders": {
       "bookingId": {}
+    }
+  },
+  "bookingPartySizeValue": "{count, plural, one{1 person} other{{count} people}}",
+  "@bookingPartySizeValue": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "bookingTravelIncludedNote": "This request appears to sit inside the included {radiusKm} km service radius.",
+  "@bookingTravelIncludedNote": {
+    "placeholders": {
+      "radiusKm": {
+        "type": "int"
+      }
+    }
+  },
+  "bookingTravelExtraNote": "This address may add an estimated ${fee} travel fee beyond the artist's included radius.",
+  "@bookingTravelExtraNote": {
+    "placeholders": {
+      "fee": {
+        "type": "int"
+      }
+    }
+  },
+  "bookingTravelPendingNote": "{radiusKm} km is included. Travel beyond that may start from ${fee} after location review.",
+  "@bookingTravelPendingNote": {
+    "placeholders": {
+      "radiusKm": {
+        "type": "int"
+      },
+      "fee": {
+        "type": "int"
+      }
+    }
+  },
+  "bookingSelectedPackageDescription": "Booking route loaded for artist {artistId} and package {packageId}.",
+  "@bookingSelectedPackageDescription": {
+    "placeholders": {
+      "artistId": {},
+      "packageId": {}
     }
   }
 }

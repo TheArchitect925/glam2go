@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 
-import '../../../../app/app_router.dart';
 import '../../../../core/l10n/localization.dart';
-import '../../../../shared/widgets/feature_scaffold_screen.dart';
+import '../../../../shared/widgets/app_shell.dart';
+import '../widgets/discovery_results_view.dart';
 
 class SearchScreen extends StatelessWidget {
   const SearchScreen({super.key});
@@ -12,13 +11,9 @@ class SearchScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final l10n = context.l10n;
 
-    return FeatureScaffoldScreen(
+    return AppScaffoldWrapper(
       title: l10n.searchTitle,
-      headline: l10n.searchHeadline,
-      description: l10n.searchDescription,
-      statusLabel: l10n.searchStatus,
-      primaryActionLabel: l10n.actionViewSearchResults,
-      onPrimaryAction: () => context.go(AppRoutePaths.searchResults),
+      child: const DiscoveryResultsView(showIntro: true, limitResults: 3),
     );
   }
 }

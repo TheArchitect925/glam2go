@@ -1,35 +1,28 @@
 # Continuation Backlog
 
-Ordered next passes after the Flutter baseline pass:
+Ordered next passes after the current launch-preparation wave:
 
-1. Discovery feature implementation
-   - home discovery skeleton
-   - real artist list item
-   - search input and result state model
-   - no fake catalog data presented as finished
+1. Customer account APIs
+  - hook favorites, saved addresses, profile, and notification preferences to remote-backed repositories
+  - preserve graceful guest gating and post-auth continuation
 
-2. Artist profile foundation
-   - profile summary
-   - portfolio section entry
-   - package list and package detail content structure
+2. Discovery contract refinement and media hydration
+   - split list/detail payloads if needed without changing presentation
+   - improve partial remote hydration for portfolio and availability preview
+   - confirm package and specialty contract stability
 
-3. Booking flow foundation
-   - booking state model
-   - date/time selection
-   - address and travel-fee handling
-   - checkout placeholder and confirmation
+3. Artist portfolio/media upload baseline
+   - connect portfolio item metadata to real media selection, upload, and stored references without overbuilding media infrastructure
+   - keep artist profile and discovery media assumptions aligned
 
-4. Profile, bookings, and favorites data passes
-   - bookings state and detail presentation
-   - favorites persistence
-   - profile and settings baseline forms
+4. External-beta vendor hookup
+  - connect notification delivery, analytics, and crash-reporting services to real platform or vendor implementations
+  - keep environment flags and bootstrap behavior stable across dev, beta, and production targets
 
-5. Artist onboarding and profile management
-   - only if confirmed for near-term roadmap
-   - packages, availability, travel policy, public profile editing
+5. Release-content finalization
+  - replace provisional legal and policy copy with reviewed final content
+  - finalize App Store metadata, reviewer notes, and privacy disclosure details
 
-6. Polish, testing, and hardening
-   - route tests
-   - domain tests
-   - widget coverage for shared primitives
-   - baseline analytics and error reporting hooks
+6. Launch decision refresh
+  - rerun the cutover checklist and go/no-go assessment after customer account APIs and vendor hookups land
+  - downgrade the current public-launch no-go only when the blocker docs actually change

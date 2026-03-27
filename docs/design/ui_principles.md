@@ -15,10 +15,13 @@
 ## Elegant But Readable
 - premium does not mean low contrast or tiny text
 - beauty presentation should still feel operationally clear
+- elevated surfaces should still feel calm, not glossy or loud
 
 ## Visual Consistency
 - shared component behavior should stay consistent across screens
 - avoid one-off spacing, border, or shadow experiments
+- hero sections, cards, chips, and state views should read as one product family
+- page-level styling should compose tokens, not bypass them
 
 ## Clear Pricing And Service Details
 - show what is included
@@ -29,3 +32,11 @@
 - explain extra travel cost plainly
 - avoid making location-related pricing feel punitive or hidden
 
+## Calm Management Surfaces
+- account, settings, and booking-management screens should feel as polished as discovery
+- support and policy content should use the same visual language as transactional summaries
+
+## Avoid Visual Drift
+- no raw hex colors in widgets
+- no ad hoc radii for cards and hero banners
+- no isolated component variants that restyle the same interaction differently

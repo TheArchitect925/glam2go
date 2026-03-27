@@ -5,5 +5,6 @@ class AppRadius {
   static const medium = 12.0;
   static const large = 16.0;
   static const extraLarge = 24.0;
+  static const hero = 28.0;
   static const pill = 999.0;
 }
